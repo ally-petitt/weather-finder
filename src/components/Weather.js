@@ -6,7 +6,7 @@ function Weather({ info }) {
           <div className="cards">
               <h1>{info.city}, {info.country}</h1>
               <h5 className="py-4">
-                  <i className="wi wi-day-sunny display-1"></i>
+                  <i className={`wi ${info.icon} display-1`}></i>
               </h5>
               <h1 className="py-2">{info.temp}&deg; C</h1>
 
