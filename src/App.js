@@ -31,7 +31,7 @@ function App() {
     try {
       const city = e.target.elements.city.value;
 
-      const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
+      const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
 
       const res = await apiCall.json();
 
