@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weather-finder/static/css/main.2e5a0d44.chunk.css",
-    "main.js": "/weather-finder/static/js/main.e609f220.chunk.js",
-    "main.js.map": "/weather-finder/static/js/main.e609f220.chunk.js.map",
+    "main.js": "/weather-finder/static/js/main.602ce9ea.chunk.js",
+    "main.js.map": "/weather-finder/static/js/main.602ce9ea.chunk.js.map",
     "runtime-main.js": "/weather-finder/static/js/runtime-main.3d6b9f3c.js",
     "runtime-main.js.map": "/weather-finder/static/js/runtime-main.3d6b9f3c.js.map",
     "static/css/2.44fc4724.chunk.css": "/weather-finder/static/css/2.44fc4724.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.44fc4724.chunk.css",
     "static/js/2.e81d6358.chunk.js",
     "static/css/main.2e5a0d44.chunk.css",
-    "static/js/main.e609f220.chunk.js"
+    "static/js/main.602ce9ea.chunk.js"
   ]
 }
