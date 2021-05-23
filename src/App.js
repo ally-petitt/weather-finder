@@ -1,10 +1,11 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Weather from "./components/Weather"
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "weather-icons/css/weather-icons.css"
+import Form from './components/Form';
 
 // make an api call to this link: api.openweathermap.org/data/2.5/weather?q=London,uk
 const API_KEY = "04ae21c0f17814f4a85bbfb1bb2f38d4"
@@ -21,12 +22,14 @@ function App() {
     clouds: "wi-day-fog"
   }
 
-  useEffect(async () => {
-    const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=london&appid=${API_KEY}`)
+  async function getWeather (e) {
+    e.preventDefault();
+    
+    const city = e.target.elements.city.value;
+
+    const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
 
     const res = await apiCall.json();
-
-    console.log(res)
 
     const icon = getIcon(res.weather[0].id)
 
@@ -40,7 +43,7 @@ function App() {
       icon: icon
     })
 
-  }, [])
+  }
 
   const calcCelcius = (temp) => {
     let celcius = Math.floor(temp - 273.15);
@@ -78,10 +81,9 @@ function App() {
     }
   }
 
-  console.log(state)
-
   return (
     <div className="App">
+      <Form getWeather={getWeather} />
       <Weather info={state}/>
     </div>
   );
