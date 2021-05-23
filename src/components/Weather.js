@@ -2,7 +2,7 @@ import React from 'react'
 
 function Weather({ info }) {
     return (
-        <div className="container">
+        <div className="container text-dark">
           <div className="cards">
               <h1>{info.city}, {info.country}</h1>
               <h5 className="py-4">

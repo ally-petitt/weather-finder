@@ -92,7 +92,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App pt-5">
       <Form getWeather={getWeather} status={status} />
       {status == 200 ? (<Weather info={state}/>) : null}
     </div>

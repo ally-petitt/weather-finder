@@ -3,7 +3,7 @@ import React from 'react'
 function Form({ getWeather, status }) {
 
     return (
-        <div className="container w-100 py-4 my-5">
+        <div className="container w-100 pb-4 my-5">
             <form onSubmit={getWeather}>
                 <div className="row d-flex justify-content-center">
                     <div className="col-md-5 d-flex flex-column align-items-start">
@@ -15,7 +15,7 @@ function Form({ getWeather, status }) {
                             : null}
                     </div>
                     <div className="col-md-3">
-                        <button className="btn btn-warning" type="submit">Get Weather</button>
+                        <button className="btn btn-dark" type="submit">Get Weather</button>
                     </div>
                 </div>
             </form>
